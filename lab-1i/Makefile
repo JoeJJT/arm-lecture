@@ -24,7 +24,7 @@ clean:
 	rm -f $(objects) fibseq
 
 QEMU_CMD = qemu-arm -L /usr/arm-linux-gnueabihf ./fibseq & 
-CMD = yes 10 | $(call QEMU_CMD) #&& sleep 1
+CMD = yes 10 | $(call QEMU_CMD)
 qemu: fibseq
 	@yes 1 | $(call QEMU_CMD)
 	@sleep 1
