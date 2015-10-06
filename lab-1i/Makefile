@@ -40,4 +40,4 @@ qemu: fibseq
 	@sleep 1
 	@yes 7 | $(call QEMU_CMD)
 	@sleep 1
-@yes 10| $(CMD)
+	@yes 10| $(CMD)
